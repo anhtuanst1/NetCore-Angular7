@@ -1,0 +1,8 @@
+<div> <!--*ngIf="messageService.messages.length"-->
+  <h2>Messages</h2>
+  <button class="clear"
+          (click)="ClearMessage()">clear</button>
+  <div #scrollMe class="col-sm-4 box_mess scroll">
+    <div *ngFor="let message of messageService.messages"> {{message}} </div>
+  </div>
+</div>
